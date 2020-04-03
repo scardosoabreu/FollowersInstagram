@@ -1,0 +1,13 @@
+// Instagram: Seguir
+// Script test para estudos. 
+// Respeite os termos de uso do Instagram.
+ function initSeguir(i) {
+    setTimeout(function(){
+        console.log('Seguindo…');
+        inputs[i].click();
+  }, Math.floor((Math.random() * 200))+5);
+  }
+  var inputs = document.querySelectorAll('.rBNOH button');
+  for(var i=1; i<inputs.length;i++) {
+    initSeguir(i);
+  }
